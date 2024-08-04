@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YukonHask - Công Nghệ AI</title>
+    <style>
+        /* Thiết lập kiểu dáng cơ bản */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        header {
+            background-color: #a8d5e2; /* Pastel Blue */
+            color: #333;
+            padding: 10px 20px;
+            position: fixed;
+            width: 90%;
+            margin: 10px 5%; /* Canh giữa và tạo khoảng cách từ cạnh */
+            z-index: 1000;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 15px; /* Bo góc */
+            transition: top 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Hiệu ứng chuyển động mượt mà */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #00796b; /* Darker pastel */
+        }
+        .hero {
+            background-color: #e3f2fd; /* Pastel Light Blue */
+            color: #333;
+            text-align: center;
+            padding: 100px 20px 60px 20px;
+            margin-top: 100px; /* Điều chỉnh theo kích thước header */
+        }
+        .hero h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .ad-sidebar {
+            flex: 1;
+            max-width: 300px;
+            margin-right: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+        }
+        .ad-sidebar h3 {
+            font-size: 1.5em;
+            color: #00796b;
+            border-bottom: 2px solid #00796b;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        .ad-sidebar p {
+            font-size: 1.1em;
+            text-align: justify;
+        }
+        .ad-sidebar img {
+            width: 100%;
+            height: auto;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        .content {
+            flex: 3;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h2 {
+            font-size: 2em;
+            color: #00796b;
+            border-bottom: 2px solid #00796b;
+            padding-bottom: 10px;
+        }
+        .section p {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        .footer {
+            background-color: #a8d5e2; /* Pastel Blue */
+            color: #333;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .contact a {
+            color: #00796b;
+            text-decoration: none;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+        /* Hiệu ứng mượt mà */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <h1>YukonHask</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Về Chúng Tôi</a></li>
+                <li><a href="#services">Dịch Vụ</a></li>
+                <li><a href="#team">Đội Ngũ</a></li>
+                <li><a href="#contact">Liên Hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h2>Chào Mừng Đến Với YukonHask</h2>
+        <p>Chúng tôi cung cấp các giải pháp AI tiên tiến để giúp doanh nghiệp của bạn phát triển vượt bậc. Khám phá những dịch vụ đột phá của chúng tôi để hiểu cách chúng tôi có thể hỗ trợ bạn đạt được mục tiêu kinh doanh.</p>
+    </div>
+
+    <div class="main-content">
+        <div class="ad-sidebar">
+            <h3>Quảng Cáo</h3>
+            <p>Đây là nơi bạn có thể quảng cáo sản phẩm hoặc dịch vụ của mình. Khám phá các giải pháp của chúng tôi để tăng hiệu quả kinh doanh của bạn.</p>
+            <img src="https://via.placeholder.com/300x200" alt="Hình ảnh quảng cáo">
+        </div>
+        <div class="content">
+            <div class="section" id="about">
+                <h2>Về Chúng Tôi</h2>
+                <p>YukonHask là công ty hàng đầu trong lĩnh vực trí tuệ nhân tạo (AI), cam kết mang đến những giải pháp công nghệ tiên tiến và hiệu quả nhất cho khách hàng. Chúng tôi không chỉ cung cấp các sản phẩm AI mà còn hỗ trợ doanh nghiệp trong quá trình chuyển đổi số, giúp họ tối ưu hóa quy trình và gia tăng lợi thế cạnh tranh. Với đội ngũ chuyên gia giàu kinh nghiệm và nhiệt huyết, chúng tôi luôn sẵn sàng tư vấn và đồng hành cùng khách hàng trên con đường chinh phục công nghệ mới.</p>
+            </div>
+            <div class="section" id="services">
+                <h2>Dịch Vụ</h2>
+                <p>Tại YukonHask, chúng tôi cung cấp một loạt các dịch vụ AI đáp ứng mọi nhu cầu của doanh nghiệp, từ phân tích dữ liệu đến phát triển hệ thống tự động hóa. Dưới đây là một số dịch vụ chính của chúng tôi:</p>
+                <ul>
+                    <li><strong>Phân Tích Dữ Liệu:</strong> Chúng tôi sử dụng các công cụ phân tích tiên tiến để biến dữ liệu thành thông tin có giá trị, giúp doanh nghiệp đưa ra quyết định chính xác và nhanh chóng.</li>
+                    <li><strong>Phát Triển Hệ Thống Tự Động Hóa:</strong> Các hệ thống tự động hóa của chúng tôi giúp giảm thiểu lỗi con người và tối ưu hóa hiệu suất làm việc, từ đó nâng cao năng suất và lợi nhuận.</li>
+                    <li><strong>Giải Pháp Học Máy Tùy Chỉnh:</strong> Chúng tôi phát triển các mô hình học máy tùy chỉnh theo nhu cầu của từng doanh nghiệp, đảm bảo giải pháp hiệu quả và thích ứng với mọi yêu cầu cụ thể.</li>
+                    <li><strong>Tư Vấn AI:</strong> Chúng tôi cung cấp dịch vụ tư vấn chuyên sâu về AI, giúp khách hàng lựa chọn và triển khai các giải pháp phù hợp nhất với nhu cầu của họ.</li>
+                </ul>
+            </div>
+            <div class="section" id="team">
+                <h2>Đội Ngũ</h2>
+                <p>Đội ngũ của YukonHask bao gồm các chuyên gia hàng đầu trong lĩnh vực AI, với kinh nghiệm phong phú và sự tận tụy không ngừng. Chúng tôi tự hào về khả năng làm việc sáng tạo và khả năng giải quyết các vấn đề phức tạp một cách hiệu quả. Đội ngũ của chúng tôi luôn sẵn sàng lắng nghe và đáp ứng nhu cầu của khách hàng, đồng thời không ngừng nghiên cứu và phát triển để mang lại những giải pháp công nghệ tối ưu nhất.</p>
+            </div>
+            <div class="section" id="contact">
+                <h2>Liên Hệ</h2>
+                <p>Nếu bạn quan tâm đến các giải pháp AI của chúng tôi hoặc có bất kỳ câu hỏi nào, vui lòng liên hệ với chúng tôi qua:</p>
+                <ul class="contact">
+                    <li>Email: <a href="mailto:contact@yukonhask.com">contact@yukonhask.com</a></li>
+                    <li>Điện thoại: +84 123 456 789</li>
+                    <li>Theo dõi chúng tôi trên:</li>
+                    <li><a href="https://www.facebook.com/yukonhask" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.twitter.com/yukonhask" target="_blank">Twitter</a></li>
+                    <li><a href="https://www.linkedin.com/company/yukonhask" target="_blank">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2024 YukonHask. All rights reserved.
+    </div>
+
+    <script>
+        // JavaScript để ẩn/hiện thanh menu khi cuộn
+        let lastScrollTop = 0;
+        const header = document.getElementById("header");
+
+        window.addEventListener("scroll", function() {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop) {
+                // Cuộn xuống - ẩn thanh menu
+                header.style.top = "-70px"; // Ẩn thanh menu
+            } else {
+                // Cuộn lên - hiện thanh menu
+                header.style.top = "10px"; // Hiện thanh menu
+            }
+            lastScrollTop = scrollTop;
+        });
+    </script>
+</body>
+</html>
